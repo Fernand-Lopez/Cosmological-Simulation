@@ -1,0 +1,10 @@
+Read Me of NBody simulation project.
+
+This project is a simulation of the NBody problem which use Raylib.
+This simulation use physics laws for represent the movements of stars. These laws are Newtonians movements laws.
+
+Possible Maj :
+
+-Add an static object in the center of the screen of simulate solar system
+-Add stellar dynamic for simulate movement of star around an galaxy
+-Add black hole

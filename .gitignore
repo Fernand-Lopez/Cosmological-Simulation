@@ -1,0 +1,15 @@
+# Dossiers de build générés par CLion / CMake
+/cmake-build-*
+/build/
+
+# Exécutables et fichiers objets Windows
+*.exe
+*.obj
+*.lib
+*.pdb
+*.ilk
+*.exp
+
+# Fichiers de configuration spécifiques à CLion
+.idea/
+*.iml
