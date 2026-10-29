@@ -12,10 +12,13 @@ void galaxySimulation(t_disk const disk, t_object object[], int const N) {
     galaxySetPositionMassVelocity(object, disk, N); //suspect
 
     while (!WindowShouldClose()) {
+        double const secondes = 0.00000001;
         BeginDrawing();
         ClearBackground(BLACK);
         drawDisk(disk);
         drawObjectsGalaxy(object, disk, N);
+        orbitalVelocity(object, disk, N);
+        galaxyUpdatePosition(object, N, secondes);
         exitSimulation();
         EndDrawing();
     }

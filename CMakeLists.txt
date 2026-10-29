@@ -18,7 +18,7 @@ add_executable(NBody main.c
         physics/include_physics/physics_include.h
         render/src_render/nbody_simulation.c
         physics/src_physics/interaction_gravitationnelle.c
-        physics/src_physics/update_position.c
+        physics/src_physics/NBody_update_position.c
         render/include_render/render_include.h
         render/src_render/nbody_draw_objects.c
         physics/src_physics/nbody_set_position_mass_velocity.c
@@ -30,6 +30,8 @@ add_executable(NBody main.c
         render/src_render/galaxy_simulation.c
         render/src_render/draw_disk.c
         render/src_render/galaxy_draw_objects.c
-        physics/src_physics/galaxy_set_position_mass_velocity.c)
+        physics/src_physics/galaxy_set_position_mass_velocity.c
+        physics/src_physics/orbital_velocity.c
+        physics/src_physics/galaxy_update_position.c)
 
 target_link_libraries(NBody PRIVATE raylib)

@@ -51,12 +51,12 @@ void menu() {
             if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                 CloseWindow();
                 t_disk disk;
-                t_object object[30];
-                disk.mass = 100;
+                t_object object[1];
+                disk.mass = 1e35;
                 disk.radius = 10;
                 disk.xPosition = 600;
                 disk.yPosition = 450;
-                galaxySimulation(disk, object, 30);
+                galaxySimulation(disk, object, 1);
                 return;
             }
         }

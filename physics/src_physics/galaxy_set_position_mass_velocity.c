@@ -24,7 +24,7 @@ void galaxySetPositionMassVelocity(t_object object[], t_disk disk, int N) {
 
         object[i].mass = weightMin + (double)rand() / ((double)RAND_MAX / (weightMax - weightMin)); //Randomize objects mass
 
-        object[i].xVelocity = 0; //start velocity
+        object[i].xVelocity = 100; //start velocity
         object[i].yVelocity = 0;
     }
 }
