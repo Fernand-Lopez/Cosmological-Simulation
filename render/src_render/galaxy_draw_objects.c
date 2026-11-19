@@ -7,6 +7,6 @@
 
 void drawObjectsGalaxy(t_object objects[], t_disk const disk, int const N) {
     for (int i = 0 ; i < N ; i++) {
-        DrawCircle(objects[i].xPosition, objects[i].yPosition, 5, WHITE); //Draw objects
+        DrawCircle((int)objects[i].xPosition, (int)objects[i].yPosition, 5, WHITE); //Draw objects
     }
 }

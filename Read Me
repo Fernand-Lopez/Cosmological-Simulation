@@ -8,3 +8,6 @@ Possible Maj :
 -Add an static object in the center of the screen of simulate solar system
 -Add stellar dynamic for simulate movement of star around an galaxy
 -Add black hole
+
+
+To Do : Modify epsilon and dt in the galaxy simulation

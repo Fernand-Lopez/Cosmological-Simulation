@@ -13,6 +13,7 @@ typedef struct { //s_object a retirer inutile
     double xAcceleration;
     double yAcceleration;
     double mass;
+    double radius;
 } t_object;
 
 typedef struct {
@@ -26,7 +27,7 @@ void gravitationalInteraction(t_object objects[], int N);
 void updatePosition(t_object objects[], int N, double dt);
 void setPositionMassVelocity(t_object object[], int N);
 void galaxySetPositionMassVelocity(t_object object[], t_disk disk, int N);
-void orbitalVelocity(t_object object[], t_disk disk, int N);
+void orbitalVelocity(t_object objects[], t_disk disk, int N);
 void galaxyUpdatePosition(t_object objects[], t_disk disk,  int N, double dt);
 
 #endif //NBODY_OBJECT_H

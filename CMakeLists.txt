@@ -31,7 +31,7 @@ add_executable(NBody main.c
         render/src_render/draw_disk.c
         render/src_render/galaxy_draw_objects.c
         physics/src_physics/galaxy_set_position_mass_velocity.c
-        physics/src_physics/orbital_velocity.c
+        physics/src_physics/gravity_to_disk.c
         physics/src_physics/galaxy_update_position.c)
 
 target_link_libraries(NBody PRIVATE raylib)
