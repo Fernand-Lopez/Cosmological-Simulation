@@ -4,6 +4,9 @@
 
 #ifndef NBODY_OBJECT_H
 #define NBODY_OBJECT_H
+#define GM 1e6
+#define G 6.67e-11
+#define M 1.9884e30 //stellar mass
 
 typedef struct { //s_object a retirer inutile
     double xPosition;

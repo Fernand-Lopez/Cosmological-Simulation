@@ -13,7 +13,7 @@ void galaxySimulation(t_disk const disk, t_object object[], int const N) {
     galaxySetPositionMassVelocity(object, disk, N); //suspect
 
     while (!WindowShouldClose()) {
-        double const secondes = 0.01;
+        double const secondes = 0.001;
         BeginDrawing();
         ClearBackground(BLACK);
         drawDisk(disk);
