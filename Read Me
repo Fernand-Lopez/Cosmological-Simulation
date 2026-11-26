@@ -10,4 +10,6 @@ Possible Maj :
 -Add black hole
 
 
-To Do : Modify epsilon and dt in the galaxy simulation
+To Do : -create multiple orbits on a radius [0;2pi] replace rand % 1201
+        -minimum radius
+        -stellar mass

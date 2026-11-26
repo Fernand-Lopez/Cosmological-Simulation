@@ -10,7 +10,7 @@ void drawObjects(t_object objects[], int const N) {
     BeginDrawing();
     ClearBackground(BLACK);
     for (int i = 0 ; i < N ; i++) {
-        DrawCircle(objects[i].xPosition, objects[i].yPosition, 5, WHITE); //Draw objects
+        DrawCircle((int)objects[i].xPosition, (int)objects[i].yPosition, 5, WHITE); //Draw objects
     }
     EndDrawing();
 }
