@@ -4,7 +4,7 @@
 #include "../include_render/render_include.h"
 #include "raylib.h"
 
-void drawDisk(t_disk disk) {//affichage d'un centre de gravité qui sera le centre de la galaxie
+void drawDisk(t_centerOfGalaxy disk) {//affichage d'un centre de gravité qui sera le centre de la galaxie
     DrawCircle(disk.xPosition, disk.yPosition, disk.radius, YELLOW);
 }
 

@@ -10,6 +10,4 @@ Possible Maj :
 -Add black hole
 
 
-To Do : -create multiple orbits on a radius [0;2pi] replace rand % 1201
-        -minimum radius
-        -stellar mass
+To Do : -spiral logarithmique and define position on the spir

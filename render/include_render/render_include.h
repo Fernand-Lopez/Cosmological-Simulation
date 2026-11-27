@@ -22,8 +22,8 @@ void menu();
 void initButton(t_listButton button, float xPosition, float yPosition);
 void drawButton(t_listButton button);
 void exitSimulation();
-void drawDisk(t_disk disk);
-void galaxySimulation(t_disk disk, t_object object[], int N);
+void drawDisk(t_centerOfGalaxy disk);
+void galaxySimulation(t_centerOfGalaxy disk, t_object object[], int N);
 void drawObjectsGalaxy(t_object objects[], int N);
 
 
