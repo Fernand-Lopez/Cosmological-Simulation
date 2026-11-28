@@ -7,8 +7,8 @@
 #define GM 1e6
 #define G 6.67e-11
 #define M 1.9884e30 //stellar mass
-#define EPSILON 0.0001
-#define PI 3.141592653589793
+#define ϵ 0.0001
+#define π 3.141592653589793
 
 typedef struct {
     double xPosition;
@@ -30,7 +30,7 @@ typedef struct {
 
 typedef struct {
     double radius;
-    double theta;
+    double θ;
 }t_polar;
 
 void gravitationalInteraction(t_object objects[], int N);

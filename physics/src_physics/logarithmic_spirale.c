@@ -9,5 +9,5 @@
 
 double logarithmicSpirale(t_polar const polar, double const a, double const b, int const K, int const k) {
     //check division error with b
-    return 1/b*log(polar.r/a) + (double)2*PI*k/K + EPSILON;
+    return 1/b*log(polar.radius/a) + (double)2*PI*k/K + ϵ;
 }

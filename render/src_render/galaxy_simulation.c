@@ -4,20 +4,19 @@
 
 #include "../../physics/include_physics/physics_include.h"
 #include "raylib.h"
-#include "stdio.h"
 #include "../include_render/render_include.h"
 
-void galaxySimulation(t_centerOfGalaxy const disk, t_object object[], int const N) {
+void galaxySimulation(t_centerOfGalaxy const center, t_object object[], int const N, int const K, t_polar const polar) {
     initWindow();
-    galaxySetPositionMassVelocity(object, disk, N); //suspect
+    galaxySetPositionMassVelocity(object, polar, center, N, K); //suspect
 
     while (!WindowShouldClose()) {
-        double const secondes = 0.01;
+        double const secondes = 0.1;
         BeginDrawing();
         ClearBackground(BLACK);
-        drawDisk(disk);
+        drawDisk(center);
         drawObjectsGalaxy(object, N);
-        galaxyGravitationalInteraction(object, disk, N);
+        galaxyGravitationalInteraction(object, polar, center, N);
         galaxyUpdatePosition(object, N, secondes);
         exitSimulation();
         EndDrawing();

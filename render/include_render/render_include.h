@@ -6,6 +6,8 @@
 #define NBODY_RENDER_INCLUDE_H
 #include "../../physics/include_physics/physics_include.h"
 #include "raylib.h"
+
+
 typedef struct {
     Rectangle bounds;
     const char *label;
@@ -22,8 +24,9 @@ void menu();
 void initButton(t_listButton button, float xPosition, float yPosition);
 void drawButton(t_listButton button);
 void exitSimulation();
-void drawDisk(t_centerOfGalaxy disk);
-void galaxySimulation(t_centerOfGalaxy disk, t_object object[], int N);
+void drawDisk(t_centerOfGalaxy center);
+
+inline void galaxySimulation(t_centerOfGalaxy const center, t_object object[], int const N, int const K, t_polar const polar);
 void drawObjectsGalaxy(t_object objects[], int N);
 
 

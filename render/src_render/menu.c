@@ -50,13 +50,14 @@ void menu() {
         if (galaxySimulationButton.isHovered) { //execution of the galaxy simulation
             if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                 CloseWindow();
-                t_centerOfGalaxy disk;
-                t_object object[500];
-                disk.mass = 1e40;
-                disk.radius = 5;
-                disk.xPosition = 600;
-                disk.yPosition = 450;
-                galaxySimulation(disk, object, 500);
+                t_centerOfGalaxy center;
+                t_polar polar;
+                t_object object[1000];
+                center.mass = 1e40;
+                center.radius = 5;
+                center.xPosition = 600;
+                center.yPosition = 450;
+                galaxySimulation(center, object, 1000, 3, polar);
                 return;
             }
         }
