@@ -8,10 +8,9 @@
 void gravitationalInteraction(t_object objects[], int const N) {
     // dx : x-component y : y-component ex : unitary vector x ey : unitary vector y
     double Force = 0; //Newtonian force
-    for (int i = 0 ; i < N ; i++) { // acceleration update
-        objects[i].xAcceleration = 0;
-        objects[i].yAcceleration = 0;
-    }
+
+    setAcceleration(objects, N);
+    
     for (int i = 0 ; i < N ; i++) {// multiplies masses of two object and calculate the distance
         for (int j = i+1 ; j < N ; j++) {
             const double epsilon = 10000;

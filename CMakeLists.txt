@@ -17,7 +17,7 @@ FetchContent_MakeAvailable(raylib)
 add_executable(NBody main.c
         physics/include_physics/physics_include.h
         render/src_render/nbody_simulation.c
-        physics/src_physics/interaction_gravitationnelle.c
+        physics/src_physics/gravitational_interaction.c
         physics/src_physics/NBody_update_position.c
         render/include_render/render_include.h
         render/src_render/nbody_draw_objects.c
@@ -28,11 +28,14 @@ add_executable(NBody main.c
         render/src_render/draw_button.c
         render/src_render/exit_simulation.c
         render/src_render/galaxy_simulation.c
-        render/src_render/draw_disk.c
-        render/src_render/galaxy_draw_objects.c
+        render/src_render/draw_center.c
+        render/src_render/draw_objects_galaxy.c
         physics/src_physics/galaxy_set_position_mass_velocity.c
-        physics/src_physics/galaxyGravitaionalInteraction.c
+        physics/src_physics/galaxy_gravitaional_interaction.c
         physics/src_physics/galaxy_update_position.c
-        physics/src_physics/logarithmic_spirale.c)
+        physics/src_physics/logarithmic_spirale.c
+        physics/src_physics/set_acceleration.c
+        physics/src_physics/interaction_with_center_of_galaxy.c
+        physics/src_physics/galaxy_stars_interactions.c)
 
 target_link_libraries(NBody PRIVATE raylib)
